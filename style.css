@@ -1,0 +1,49 @@
+body 
+{
+	font-family: 'Source Code Pro', Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.5;
+	color: #333333;
+}
+
+h1, h2, h3 
+{
+	font-weight: 700;
+	color: black;
+}
+
+b
+{
+	font-weight: 700;
+}
+
+p 
+{
+	margin: 2em 0 2em 0;
+}
+
+/* FULL SIZE */
+
+.full 
+{
+	height: 100%;
+	background-color: yellow;
+	background-size: cover;
+}
+
+/* SECTIONS */
+
+#header {
+	background-image: url(images/headerimage.jpg);
+}
+
+#one {}
+
+#two {}
+
+#three {}
+
+#four {}
+
+#footer {}
