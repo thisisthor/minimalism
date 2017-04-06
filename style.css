@@ -25,6 +25,12 @@ p
 
 /* FULL SIZE */
 
+html, body 
+{
+	height: 100%;
+}
+
+
 .full 
 {
 	height: 100%;
