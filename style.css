@@ -5,7 +5,7 @@ body
 	font-size: 1em;
 	line-height: 1.5;
 	color: #333333;
-}
+	}
 
 h1, h2, h3 
 {
@@ -25,31 +25,51 @@ p
 
 /* FULL SIZE */
 
-html, body 
-{
-	height: 100%;
-}
-
-
-.full 
-{
-	height: 100%;
-	background-color: yellow;
-	background-size: cover;
-}
-
 /* SECTIONS */
 
 #header {
-	background-image: url(images/headerimage.jpg);
+	background-image: url("images/headerimage.jpg");
+	height: 600px;
+	width: 100%;
+	background-size: cover;
 }
 
-#one {}
+#intro { 
+background-color: #EDB999;
+ }
 
-#two {}
+.card { 
+	width: 100%;
+	height: auto;
+	background-color: blue;
+	color: #fff;
+}
 
-#three {}
+#full-image {
+	background-image: url("images/full-image.jpg");
+	height: 600px;
+	width: 100%;
+	background-size: cover;
+}
 
-#four {}
 
-#footer {}
+
+
+@media screen and (min-width: 40em) {
+	
+	.outer-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+		
+	#intro {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.card { flex: 0 1 calc(50% - 5em); margin: 0 auto; margin-bottom: 7em; margin-top: 7em; }
+		
+	.h-centred { display: flex; justify-content: center; align-items: center;}
+	
+}
