@@ -28,8 +28,10 @@ p
 /* SECTIONS */
 
 #header {
+	display: flex;
+	justify-content: center; align-items: center;
 	background-image: url("images/headerimage.jpg");
-	height: 600px;
+	height: 900px;
 	width: 100%;
 	background-size: cover;
 }
@@ -37,6 +39,11 @@ p
 #intro { 
 background-color: #EDB999;
  }
+
+#outro { 
+background-color: #EAFDCF;
+ }
+
 
 .card { 
 	height: auto;
@@ -46,7 +53,7 @@ background-color: #EDB999;
 
 #full-image {
 	background-image: url("images/full-image.jpg");
-	height: 600px;
+	height: 900px;
 	width: 100%;
 	background-size: cover;
 }
@@ -66,15 +73,24 @@ background-color: #EDB999;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	
-	.card { flex: 0 1 calc(50% - 5em); margin: 0 auto; margin-bottom: 7em; margin-top: 7em; }
+
+	#outro {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 		
-	.h-centred { display: flex; justify-content: center; align-items: center;}
+	.card { flex: 0 1 calc(50% - 5em); margin: 0 auto; margin-bottom: 7em; margin-top: 7em; }
+	
 	
 }
 
 
+@media screen and (min-width: 60em) { 
 
+	.card { flex: 0 1 calc(50% - 5em); margin: 0 auto; margin-bottom: 7em; margin-top: 7em; }
+
+}
 
 
 
