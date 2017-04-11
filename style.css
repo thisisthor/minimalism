@@ -39,7 +39,6 @@ background-color: #EDB999;
  }
 
 .card { 
-	width: 100%;
 	height: auto;
 	background-color: blue;
 	color: #fff;
@@ -64,7 +63,7 @@ background-color: #EDB999;
 		
 	#intro {
 		display: flex;
-		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: space-between;
 	}
 	
@@ -73,3 +72,10 @@ background-color: #EDB999;
 	.h-centred { display: flex; justify-content: center; align-items: center;}
 	
 }
+
+
+
+
+
+
+
