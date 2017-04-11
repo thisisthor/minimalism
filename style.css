@@ -44,10 +44,21 @@ background-color: #EDB999;
 background-color: #EAFDCF;
  }
 
+#articles { 
+background-color: #8E8358;
+ }
+
 
 .card { 
 	height: auto;
 	background-color: blue;
+	color: #fff;
+}
+
+
+.article { 
+	height: auto;
+	background-color: #B1F8F2;
 	color: #fff;
 }
 
@@ -79,9 +90,16 @@ background-color: #EAFDCF;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-		
+
+	#articles {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+			
 	.card { flex: 0 1 calc(50% - 5em); margin: 0 auto; margin-bottom: 7em; margin-top: 7em; }
-	
+
+	.article { flex: 0 1 calc(50% - 5em); margin: 0 auto; margin-bottom: 7em; margin-top: 7em; }	
 	
 }
 
@@ -89,6 +107,8 @@ background-color: #EAFDCF;
 @media screen and (min-width: 60em) { 
 
 	.card { flex: 0 1 calc(50% - 5em); margin: 0 auto; margin-bottom: 7em; margin-top: 7em; }
+	
+	.article { flex: 0 1 calc(33% - 5em); margin: 0 auto; margin-bottom: 7em; margin-top: 7em; }	
 
 }
 
